@@ -326,9 +326,7 @@ script:
   # get CMake and Ninja (only for systems with brew - macOS)
   - |
      if [[ (-x $(which brew)) ]]; then
-       brew update
        brew install cmake ninja
-       brew upgrade cmake
        cmake --version
      fi
 
